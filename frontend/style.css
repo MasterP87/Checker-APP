@@ -1,0 +1,102 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    width: 350px; /* Die Breite des Haupt-Login-Containers */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px 40px 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 30px auto; 
+    height: 51px;
+    width: 175px; 
+}
+
+.input-group {
+    margin-bottom: 6px;
+}
+
+/* Styling für die Eingabefelder */
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 9px 8px; 
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb; 
+    border-radius: 3px; 
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 18px; /* Für bessere vertikale Ausrichtung */
+}
+
+/* Styling für den Anmelden-Button */
+button#loginButton {
+    background-color: #0095f6;
+    color: white;
+    font-weight: 600; /* Halb-Fett */
+    font-size: 14px;
+    width: 100%;
+    padding: 7px; 
+    border: none;
+    border-radius: 8px; /* Etwas runder als andere Elemente */
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.1s ease;
+}
+
+/* Deaktivierter Button */
+button#loginButton:disabled {
+    background-color: #b2dffc; /* Helle Blau-Graue Farbe, typisch für inaktive Buttons */
+    cursor: default;
+}
+
+/* Link "Passwort vergessen?" */
+.forgot-password {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+/* Registrierungs-Aufforderung unter dem Login-Feld */
+.signup-callout {
+    background-color: white;
+    padding: 25px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #262626;
+    text-align: center;
+}
+
+.signup-callout a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
